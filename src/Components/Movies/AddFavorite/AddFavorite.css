@@ -1,0 +1,13 @@
+.favouriteMovie-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.bi-heart-fill {
+  margin-left: 6px;
+  color: red;
+  cursor: pointer;
+}
