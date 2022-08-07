@@ -1,7 +1,7 @@
 import React from 'react';
 import './AddFavorite.css';
 
-export const AddFavorites = ({
+const AddFavorites = ({
   movie,
   favorites,
   setFavorites,
@@ -32,3 +32,5 @@ export const AddFavorites = ({
     </div>
   );
 };
+
+export default AddFavorites;

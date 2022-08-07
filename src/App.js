@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Paragraph from './Components/Commons/Paragraph';
-import { AddFavorites } from './Components/Movies/AddFavorite/AddFavorites';
+import AddFavorites from './Components/Movies/AddFavorite/AddFavorites';
 import MovieList from './Components/Movies/MovieList';
-import { RemoveFavorites } from './Components/Movies/RemoveFavorite/RemoveFavorites';
+import RemoveFavorites from './Components/Movies/RemoveFavorite/RemoveFavorites';
 import NavBar from './Components/NavBar/NavBar';
 
 const App = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './RemoveFavorite.css'
 
-export const RemoveFavorites = ({ movie, favorites, setFavorites, saveToLocalStorage }) => {
+const RemoveFavorites = ({ movie, favorites, setFavorites, saveToLocalStorage }) => {
   const removeFavoriteMovie = () => {
     const newFavoriteList = favorites.filter(
       (favorite) => favorite.imdbID !== movie.imdbID
@@ -27,3 +27,5 @@ export const RemoveFavorites = ({ movie, favorites, setFavorites, saveToLocalSto
     </div>
   );
 };
+
+export default RemoveFavorites
