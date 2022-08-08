@@ -40,7 +40,7 @@ body {
   border-radius: 0px;
   position: absolute;
   flex-wrap: nowrap;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .favorite-title {

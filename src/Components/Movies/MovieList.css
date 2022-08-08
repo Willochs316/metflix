@@ -10,7 +10,7 @@
   position: absolute;
   overflow-x: scroll;
   flex-wrap: nowrap;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .movie-row-container::-webkit-scrollbar {
