@@ -3,15 +3,15 @@ import './AddFavorite.css';
 
 const AddFavorites = ({
   movie,
+  setMovies,
   favorites,
   setFavorites,
   saveToLocalStorage,
 }) => {
-  const addFavoriteMovie = () => {
-    const newFavoriteList = [...favorites, movie];
-    setFavorites(newFavoriteList);
-    saveToLocalStorage(newFavoriteList);
-  };
+
+const addFavoriteMovie = () => {
+  setFavorites(prevState => [...prevState, movie])
+}
 
   return (
     <div className='favouriteMovie-container' onClick={addFavoriteMovie}>

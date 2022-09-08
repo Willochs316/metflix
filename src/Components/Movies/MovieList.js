@@ -2,9 +2,11 @@ import './MovieList.css';
 
 const MovieList = ({
   movies,
+  setMovies,
   favouriteMovie: FavouriteMovie,
   favorites,
   setFavorites,
+  addFavoriteMovie,
   saveToLocalStorage,
 }) => {
   return (
@@ -22,8 +24,10 @@ const MovieList = ({
               <div className='over-lay'>
                 <FavouriteMovie
                   movie={movie}
+                  setMovies={setMovies}
                   favorites={favorites}
                   setFavorites={setFavorites}
+                  addFavoriteMovie={addFavoriteMovie}
                   saveToLocalStorage={saveToLocalStorage}
                 />
               </div>

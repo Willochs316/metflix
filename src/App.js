@@ -8,7 +8,7 @@ import NavBar from './Components/NavBar/NavBar';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [favorites, setFavorites] = useState([{}]);
+  const [favorites, setFavorites] = useState([]);
   const [searchValue, setSearchValue] = useState('');
 
   const getMoviesRequest = async () => {
@@ -43,11 +43,13 @@ const App = () => {
         <NavBar searchValue={searchValue} setSearchValue={setSearchValue} />
         <MovieList
           movies={movies}
+          setMovies={setMovies}
           favorites={favorites}
           setFavorites={setFavorites}
           favouriteMovie={AddFavorites}
           saveToLocalStorage={saveToLocalStorage}
         />
+
         <div className='favorite-movie-container'>
           <div>
             <Paragraph className='favorite-title' title='Favorites' />
