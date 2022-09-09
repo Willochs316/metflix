@@ -8,10 +8,9 @@ const AddFavorites = ({
   setFavorites,
   saveToLocalStorage,
 }) => {
-
-const addFavoriteMovie = () => {
-  setFavorites(prevState => [...prevState, movie])
-}
+  const addFavoriteMovie = () => {
+    setFavorites((prevState) => [...prevState, movie]);
+  };
 
   return (
     <div className='favouriteMovie-container' onClick={addFavoriteMovie}>
