@@ -8,7 +8,7 @@ import NavBar from './Components/NavBar/NavBar';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState();
   const [searchValue, setSearchValue] = useState('');
 
   const getMoviesRequest = async () => {
