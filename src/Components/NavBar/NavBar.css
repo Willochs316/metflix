@@ -15,9 +15,14 @@
   display: none;
 }
 
+.iphone-mobile-navigation-image-container{
+  display: none;
+}
+
 .ipad-mobile-navbar {
   display: none;
 }
+
 
 .ipad-navigation-image-container {
   display: none;
