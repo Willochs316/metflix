@@ -1,7 +1,5 @@
 # Movie Search App
 
-![alt text]()
-
 
 # Getting Started with Create React App
 
