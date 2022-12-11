@@ -18,96 +18,167 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  width: 320px;
-  min-height: 1053px;
+  height: 1701px;
+  width: 1440px;
   margin: 0 auto 0 auto;
   position: relative;
+  overflow: hidden;
+  border-radius: 0px;
 }
 
 .favorite-movie-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 300px;
-  left: 28px;
-}
-
-.favorite-movie-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0px;
-  width: 626px;
-  left: -28px;
-  bottom: 472px;
+  height: 349px;
+  width: 1552px;
   border-radius: 0px;
   position: absolute;
+  left: 67px;
+  top: 1285px;
+  overflow-x: scroll;
+  overflow-y: hidden;
   flex-wrap: nowrap;
   background-color: transparent;
 }
 
-.favorite-movie-row::-webkit-scrollbar {
+.favorite-movie-container::-webkit-scrollbar {
   display: none;
+}
+
+.favorite-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 23px;
+  width: 210px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .favorite-title {
   font-size: 22px;
   font-weight: 500;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-@media screen and (min-width: 840px) and (max-width: 1440px) {
+/* @media only screen and (max-width: 375px) {
   .movie-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    min-width: 840px;
-    margin: auto;
+    width: 320px;
+    height: 1053px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
   }
 
-  nav {
+  .favorite-movie-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 840px;
+    height: 249px;
+    width: 626px;
+    border-radius: 0px;
+    position: absolute;
+    top: 754px;
+    left: 28px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    background-color: transparent;
   }
 
-  .navigation-image-container {
+  .favorite-movie-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .favorite-title-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-width: 840px;
+    justify-content: flex-start;
+    height: 23px;
+    width: 210px;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
-  .searchbar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    min-width: 680px;
-  }
-
-  #search-label {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
+  .favorite-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
   }
+} */
 
-  .search-input {
+@media only screen and (max-width: 834px) {
+  .movie-container {
     display: flex;
-    box-sizing: border-box;
-    min-width: 680px;
-    height: 34px;
-    border: 1px solid #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 834px;
+    height: 1701px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
   }
 
-  .movie-row-container {
-    min-width: 840px;
+  .favorite-movie-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 349px;
+    width: 1552px;
+    border-radius: 0px;
+    position: absolute;
+    left: 67px;
+    top: 1285px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    background-color: transparent;
+  }
+
+  .favorite-movie-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .favorite-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 23px;
+    width: 210px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .favorite-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 }

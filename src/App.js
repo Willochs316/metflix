@@ -1,17 +1,14 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import Paragraph from './Components/Commons/Paragraph';
-import AddFavorites from './Components/Movies/AddFavorite/AddFavorites';
-import MovieList from './Components/Movies/MovieList';
-import RemoveFavorites from './Components/Movies/RemoveFavorite/RemoveFavorites';
-import NavBar from './Components/NavBar/NavBar';
+import { useEffect, useState } from "react";
+import "./App.css";
+import Paragraph from "./components/Commons/Paragraph";
+import MovieCard from "./components/Movies/MovieCard";
+import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [favorites, setFavorites] = useState();
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState("");
 
-  const getMoviesRequest = async () => {
+  const fetchMovies = async () => {
     const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=4ab40f6a`;
 
     const response = await fetch(url);
@@ -23,47 +20,20 @@ const App = () => {
   };
 
   useEffect(() => {
-    getMoviesRequest(searchValue);
+    fetchMovies(searchValue);
   }, [searchValue]);
 
-  useEffect(() => {
-    const movieFavorites = JSON.parse(
-      localStorage.getItem('metflix-movie-app-favorites')
-    );
-    setFavorites(movieFavorites);
-  }, []);
-
-  const saveToLocalStorage = (items) => {
-    localStorage.setItem('metflix-movie-app-favorites', JSON.stringify(items));
-  };
-
   return (
-    <div className='App'>
-      <div className='movie-container'>
+    <div className="App">
+      <div className="movie-container">
         <NavBar searchValue={searchValue} setSearchValue={setSearchValue} />
-        <MovieList
-          movies={movies}
-          setMovies={setMovies}
-          favorites={favorites}
-          setFavorites={setFavorites}
-          favouriteMovie={AddFavorites}
-          saveToLocalStorage={saveToLocalStorage}
-        />
+        <MovieCard movies={movies} setMovies={setMovies} />
 
-        <div className='favorite-movie-container'>
-          <div>
-            <Paragraph className='favorite-title' title='Favorites' />
+        <div className="favorite-movie-container">
+          <div className="favorite-title-container">
+            <Paragraph className="favorite-title" title="My Favorites" />
           </div>
-
-          <div className='favorite-movie-row'>
-            <MovieList
-              movies={favorites}
-              favorites={favorites}
-              setFavorites={setFavorites}
-              favouriteMovie={RemoveFavorites}
-              saveToLocalStorage={saveToLocalStorage}
-            />
-          </div>
+          <MovieCard movies={movies} setMovies={setMovies} />
         </div>
       </div>
     </div>
