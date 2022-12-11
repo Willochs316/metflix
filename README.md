@@ -35,7 +35,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 <img width="1440" alt="Screen Shot 2022-12-11 at 3 55 04 AM" src="https://user-images.githubusercontent.com/82782869/206884613-ae4ddd9b-6c24-498b-bd7f-402a3e2ea37f.png">
 
 
-<img width="1440" alt="Screen Shot 2022-12-11 at 3 55 04 AM" src="https://user-images.githubusercontent.com/82782869/206884637-d65d2416-fbc0-423c-9d96-76d58d370e45.png">
+<img width="339" alt="Screen Shot 2022-12-11 at 3 15 07 AM" src="https://user-images.githubusercontent.com/82782869/206893269-afb99ebe-ed2b-4cef-9daf-2445a0d9f648.png">
 
 
 <img width="310" alt="Screen Shot 2022-12-11 at 3 29 48 AM" src="https://user-images.githubusercontent.com/82782869/206884652-c76788a9-3377-4bec-8ecd-51107e4dbfc4.png">
