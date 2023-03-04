@@ -1,19 +1,22 @@
-import { Svgs } from "../../assets/svgs";
 import "./MovieCard.css";
 
-const MovieCard = ({ movies, handleAddFavorite }) => {
+const MovieCard = ({
+  movies,
+  handleFavorite,
+  favouriteMovie: FavouriteMovie,
+}) => {
   return (
     <div className="movie-row-container">
-      {movies?.map((movie, index) => (
-        <div className="movie-frame" key={index}>
+      {movies?.map((movie, imdbID) => (
+        <div className="movie-frame" key={movie.imdbID}>
           <img className="movie-image" src={movie.Poster} alt="movie" />
           <p className="movie-header">{movie.Type}</p>
 
           <div
             className="overlay-container"
-            onClick={() => handleAddFavorite(movie)}
+            onClick={() => handleFavorite(movie)}
           >
-            <Svgs.LoveIcon style={{ width: "40px", height: "40px" }} />
+            <FavouriteMovie />
           </div>
         </div>
       ))}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import { AddFavorite, RemoveFavorite } from "./components/MovieButton";
 import Typography from "./components/Commons/Typography";
 import MovieCard from "./components/Movies/MovieCard";
 import NavBar from "./components/NavBar/NavBar";
@@ -24,8 +25,15 @@ const App = () => {
     fetchMovies(searchValue);
   }, [searchValue]);
 
-  const handleAddFavorite = (movie) => {
+  const addFavoriteMovie = (movie) => {
     setFavorites([...favorites, movie]);
+  };
+
+  const removeFavoriteMovie = (movie) => {
+    const existingFavorites = favorites.filter(
+      (favorite) => favorite.imdbID !== movie.imdbID
+    );
+    setFavorites(existingFavorites);
   };
 
   return (
@@ -41,7 +49,8 @@ const App = () => {
           <MovieCard
             movies={movies}
             setMovies={setMovies}
-            handleAddFavorite={handleAddFavorite}
+            favouriteMovie={AddFavorite}
+            handleFavorite={addFavoriteMovie}
           />
         </div>
 
@@ -50,7 +59,11 @@ const App = () => {
             <Typography className="movie-category" title="My Favorites" />
           </div>
 
-          <MovieCard movies={favorites} />
+          <MovieCard
+            movies={favorites}
+            favouriteMovie={RemoveFavorite}
+            handleFavorite={removeFavoriteMovie}
+          />
         </div>
       </div>
     </div>
