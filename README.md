@@ -1,88 +1,29 @@
-# Movie Search App
+# Movie App with React and OMDB API
 
+This is a simple movie app built with React and the OMDB API. The app allows users to search for movies and view their details, as well as add and remove movies from a favorites list.
 
-# Getting Started with Create React App
+Getting Started
+To get started with the app, you will need to have Node.js and npm installed on your machine. You can download the latest version of Node.js from the official website at https://nodejs.org/en/. Once you have Node.js installed, open a terminal and navigate to the project directory. Then, run the following command to install the dependencies:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```javascript
+npm install
+```
+After the dependencies are installed, you can start the development server by running the following command:
 
-## Available Scripts
+```
+npm start
+```
 
-In the project directory, you can run:
+<img width="319" alt="metflix" src="https://user-images.githubusercontent.com/82782869/222931461-efa02ee6-8ca6-4e8d-9188-cf01e2e01794.png">
 
-### `npm start`
+This will start the app in development mode and open it in your default web browser. You can also view the app by navigating to http://localhost:3000 in your web browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Using the App
+The app has two main screens: the search screen and the favorites screen. On the search screen, users can search for movies by title using the search bar. The app will display a list of movies matching the search query, along with their titles, years, and poster images. Users can add a list of their favorite movies and they can also remove a movie from their favorites list by clicking the "Remove Favorite" button.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built With
+React - JavaScript library for building user interfaces
+OMDB API - Open Movie Database API for movie data
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-<img width="1440" alt="Screen Shot 2022-12-11 at 3 55 04 AM" src="https://user-images.githubusercontent.com/82782869/206884613-ae4ddd9b-6c24-498b-bd7f-402a3e2ea37f.png">
-
-
-<img width="339" alt="Screen Shot 2022-12-11 at 3 15 07 AM" src="https://user-images.githubusercontent.com/82782869/206893269-afb99ebe-ed2b-4cef-9daf-2445a0d9f648.png">
-
-
-<img width="310" alt="Screen Shot 2022-12-11 at 3 29 48 AM" src="https://user-images.githubusercontent.com/82782869/206884652-c76788a9-3377-4bec-8ecd-51107e4dbfc4.png">
-
-
-
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-metflix
-
-### Authors
-Willochs Ojigbo
+## Author
+Willochs Ojigbo - [@Willochs316](https://www.linkedin.com/in/willochs-ojigbo-a73108196/)
