@@ -63,3 +63,72 @@
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+
+/* Media Query iPad Pro 11 */
+@media screen and (max-width: 834px) {
+  .movie-row-container {
+    display: flex;
+    align-items: flex-start;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    padding: 0;
+    gap: 13px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+
+/* Media Query Mobile Devices */
+@media only screen and (min-width: 321px) and (max-width: 679px) {
+  .movie-row-container {
+    display: flex;
+    align-items: flex-start;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    padding: 0;
+    gap: 13px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .movie-frame {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .movie-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .overlay-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}

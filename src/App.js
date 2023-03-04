@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { AddFavorite, RemoveFavorite } from "./components/MovieButton";
+import {
+  AddFavorite,
+  RemoveFavorite,
+} from "./components/MovieButton/MovieButton";
 import Typography from "./components/Commons/Typography";
 import MovieCard from "./components/Movies/MovieCard";
 import NavBar from "./components/NavBar/NavBar";
@@ -25,8 +28,20 @@ const App = () => {
     fetchMovies(searchValue);
   }, [searchValue]);
 
+  useEffect(() => {
+    const updatedFavorites = JSON.parse(localStorage.getItem("react-movie-ap"));
+
+    setFavorites(updatedFavorites);
+  }, []);
+
+  const saveToLocalStorage = (items) => {
+    localStorage.setItem("react-movie-ap", JSON.stringify(items));
+  };
+
   const addFavoriteMovie = (movie) => {
-    setFavorites([...favorites, movie]);
+    const newMovieAdded = [...favorites, movie];
+    setFavorites(newMovieAdded);
+    saveToLocalStorage(newMovieAdded);
   };
 
   const removeFavoriteMovie = (movie) => {
@@ -34,6 +49,7 @@ const App = () => {
       (favorite) => favorite.imdbID !== movie.imdbID
     );
     setFavorites(existingFavorites);
+    saveToLocalStorage(existingFavorites);
   };
 
   return (
