@@ -26,6 +26,12 @@
   gap: 10px;
   position: relative;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.movie-frame:hover {
+  cursor: pointer;
+  transform: scale(0.95);
 }
 
 .movie-image {
