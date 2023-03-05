@@ -1,11 +1,12 @@
 import React from "react";
 import "./MovieButton.css";
-import { Svgs } from "../../assets/svgs";
+import HeartIcon from "../../assets/svgs/heart.svg";
+import CloseIcon from "../../assets/svgs/close-x.svg";
 
 export const AddFavorite = () => {
   return (
     <>
-      <Svgs.HeartIcon className="heart-icon" />
+      <img src={HeartIcon} alt="" className="heart-icon" />
     </>
   );
 };
@@ -13,7 +14,7 @@ export const AddFavorite = () => {
 export const RemoveFavorite = () => {
   return (
     <>
-      <Svgs.CloseIcon className="close-icon" />
+      <img src={CloseIcon} alt="" className="close-icon" />
     </>
   );
 };
