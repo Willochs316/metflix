@@ -7,6 +7,7 @@ import {
 import Typography from "./components/Commons/Typography";
 import MovieCard from "./components/Movies/MovieCard";
 import NavBar from "./components/NavBar/NavBar";
+import axios from "axios";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -15,10 +16,9 @@ const App = () => {
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=4ab40f6a`;
-
-      const response = await fetch(url);
-      const data = await response.json();
+      const { data } = await axios.get(
+        `http://www.omdbapi.com/?s=${searchValue}&apikey=4ab40f6a`
+      );
 
       if (data.Search) {
         setMovies(data.Search);
