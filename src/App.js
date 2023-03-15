@@ -30,7 +30,6 @@ const App = () => {
 
   useEffect(() => {
     const updatedFavorites = JSON.parse(localStorage.getItem("react-movie-ap"));
-
     setFavorites(updatedFavorites);
   }, []);
 
@@ -48,6 +47,7 @@ const App = () => {
     const existingFavorites = favorites.filter(
       (favorite) => favorite.imdbID !== movie.imdbID
     );
+
     setFavorites(existingFavorites);
     saveToLocalStorage(existingFavorites);
   };

@@ -5,6 +5,7 @@ const MovieCard = ({
   handleFavorite,
   favouriteMovie: FavouriteMovie,
 }) => {
+  console.log(movies, "movies state");
   return (
     <div className="movie-row-container">
       {movies.map(

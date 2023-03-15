@@ -5,6 +5,7 @@
   justify-content: center;
   padding: 0px;
   width: 1306px;
+  /* width: 68.0208333333%; */
   height: 89px;
   gap: 4px;
   position: absolute;
@@ -51,7 +52,7 @@
     justify-content: center;
     padding: 0px;
     height: 89px;
-    width: 680px;
+    width: 81.5347721823%;
     gap: 4px;
     position: absolute;
     left: 77px;
@@ -74,23 +75,13 @@
     display: flex;
     box-sizing: border-box;
     height: 54px;
-    width: 680px;
+    width: 100%;
     border: 1px solid #000000;
     outline: 0;
     flex: none;
     order: 1;
     flex-grow: 0;
     padding-left: 8px;
-  }
-
-  ::-webkit-input-placeholder {
-    font-style: italic;
-    text-transform: none;
-  }
-
-  :-ms-input-placeholder {
-    font-style: italic;
-    text-transform: none;
   }
 
   ::placeholder {
@@ -108,7 +99,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 0px;
-    width: 82.556%;
+    width: 82.554517134%;
     height: 59px;
     gap: 4px;
     position: absolute;
@@ -137,16 +128,6 @@
     order: 1;
     flex-grow: 0;
     padding-left: 8px;
-  }
-
-  ::-webkit-input-placeholder {
-    font-style: italic;
-    text-transform: none;
-  }
-
-  :-ms-input-placeholder {
-    font-style: italic;
-    text-transform: none;
   }
 
   ::placeholder {
