@@ -1,17 +1,17 @@
-import Input from '../Commons/Input';
-import './SearchBox.css'
+import Input from "../Commons/Input";
+import "./SearchBox.css";
 
 export const SearchBox = ({ searchValue, setSearchValue }) => {
   return (
-    <div className='searchbar-container'>
-      <label id='search-label' htmlFor='search'>
+    <div className="searchbar-container">
+      <label id="search-label" htmlFor="search">
         Search
       </label>
       <Input
-        className='search-input'
+        className="search-input"
         value={searchValue}
         onChange={(event) => setSearchValue(event.target.value)}
-        placeholder='type to search...'
+        placeholder="type to search..."
       />
     </div>
   );
