@@ -7,7 +7,7 @@ const MovieCard = ({
 }) => {
   return (
     <div className="movie-row-container">
-      {movies.map(
+      {movies?.map(
         (movie) =>
           movie.Poster.match(/\.(jpeg|jpg|gif|png)$/) != null && (
             <div className="movie-frame" key={movie.imdbID}>
