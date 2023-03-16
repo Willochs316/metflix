@@ -40,9 +40,11 @@ const App = () => {
   };
 
   const addFavoriteMovie = (movie) => {
-    const newMovieAdded = [...favorites, movie];
-    setFavorites(newMovieAdded);
-    saveToLocalStorage(newMovieAdded);
+    if (!favorites.includes(movie)) {
+      const isAlreadyFavorite = [...favorites, movie];
+      setFavorites(isAlreadyFavorite);
+      saveToLocalStorage(isAlreadyFavorite);
+    }
   };
 
   const removeFavoriteMovie = (movie) => {
