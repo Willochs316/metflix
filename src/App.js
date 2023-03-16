@@ -40,7 +40,7 @@ const App = () => {
   };
 
   const addFavoriteMovie = (movie) => {
-    if (!favorites.includes(movie)) {
+    if (!favorites?.includes(movie)) {
       const isAlreadyFavorite = [...favorites, movie];
       setFavorites(isAlreadyFavorite);
       saveToLocalStorage(isAlreadyFavorite);
