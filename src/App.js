@@ -41,7 +41,7 @@ const App = () => {
 
   const addFavoriteMovie = (movie) => {
     // remove movie if already in favorites
-    const newFavorites = favorites.filter(
+    const newFavorites = favorites?.filter(
       (favorite) => favorite.imdbID !== movie.imdbID
     );
     // add movie to favorites array using push method
