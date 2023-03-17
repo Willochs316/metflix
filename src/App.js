@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-
 import {
   AddFavorite,
   RemoveFavorite,
@@ -8,6 +7,8 @@ import {
 import Typography from "./components/Commons/Typography";
 import MovieCard from "./components/Movies/MovieCard";
 import NavBar from "./components/NavBar/NavBar";
+import REACT_APP_API_KEY from "./key";
+import axios from "axios";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -16,10 +17,9 @@ const App = () => {
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=4ab40f6a`;
-
-      const response = await fetch(url);
-      const data = await response.json();
+      const { data } = await axios.get(
+        `http://www.omdbapi.com/?s=${searchValue}&apikey=${REACT_APP_API_KEY}`
+      );
 
       if (data.Search) {
         setMovies(data.Search);
@@ -40,8 +40,11 @@ const App = () => {
   };
 
   const addFavoriteMovie = (movie) => {
+    // Use the || operator to ensure that favorites is not undefined before creating the new copy
     const newFavorites = [...(favorites || [])];
+    // add movie to favorites array using push method
     newFavorites?.push(movie);
+    // set the updated favorites array state
     setFavorites(newFavorites);
     saveToLocalStorage(newFavorites);
   };
