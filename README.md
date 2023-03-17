@@ -21,6 +21,13 @@ This will start the app in development mode and open it in your default web brow
 ## Using the App
 The app has two main screens: the search screen and the favorites screen. On the search screen, users can search for movies by title using the search bar. The app will display a list of movies matching the search query, along with their titles, years, and poster images. Users can add a list of their favorite movies and they can also remove a movie from their favorites list by clicking the "Remove Favorite" button.
 
+Create a new file called .env in the root of your project. This file should contain your API key like this:
+
+```javascript
+REACT_APP_API_KEY=your-api-key-goes-here
+```
+
+
 ## Built With
 React - JavaScript library for building user interfaces
 OMDB API - Open Movie Database API for movie data
