@@ -23,8 +23,8 @@ The app has two main screens: the search screen and the favorites screen. On the
 
 Create a new file called .env in the root of your project. This file should contain your API key like this:
 
-```javascript
-REACT_APP_API_KEY=your-api-key-goes-here
+```
+REACT_APP_API_KEY = your-api-key-goes-here
 ```
 
 
