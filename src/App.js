@@ -7,7 +7,6 @@ import {
 import Typography from "./components/Commons/Typography";
 import MovieCard from "./components/Movies/MovieCard";
 import NavBar from "./components/NavBar/NavBar";
-import REACT_APP_API_KEY from "./key";
 import axios from "axios";
 
 const App = () => {
@@ -18,7 +17,7 @@ const App = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       const { data } = await axios.get(
-        `http://www.omdbapi.com/?s=${searchValue}&apikey=${REACT_APP_API_KEY}`
+        `http://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_API_KEY}`
       );
 
       if (data.Search) {
