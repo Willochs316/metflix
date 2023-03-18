@@ -1,5 +1,5 @@
 import Input from "../Commons/Input";
-import "./SearchBox.css";
+import "./SearchInput.css";
 
 export const SearchBox = ({ searchValue, setSearchValue }) => {
   return (

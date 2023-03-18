@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import Typography from "../Commons/Typography";
-import { SearchBox } from "../SearchBox/SearchBox";
+import { SearchBox } from "../Search/SearchInput";
 
 const NavBar = ({ searchValue, setSearchValue }) => {
   return (
