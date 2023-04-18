@@ -1,4 +1,4 @@
-import Input from "../../utilities/Input";
+import Input from "../../commons/Input";
 import "./SearchInput.css";
 
 export const SearchBox = ({ searchValue, setSearchValue }) => {
