@@ -91,7 +91,51 @@
 
 /* Media Query Mobile Devices */
 
-@media only screen and (min-width: 321px) and (max-width: 679px) {
+@media only screen and (min-width: 376px) and (max-width: 679px) {
+  .searchbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    width: 82.554517134%;
+    height: 59px;
+    gap: 4px;
+    position: absolute;
+    top: 380px;
+    left: 28px;
+  }
+
+  #search-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .search-input {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    border: 1px solid #000000;
+    outline: 0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding-left: 8px;
+  }
+
+  ::placeholder {
+    font-style: italic;
+    text-transform: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
   .searchbar-container {
     display: flex;
     flex-direction: column;

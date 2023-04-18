@@ -7,7 +7,7 @@ const NavBar = ({ searchValue, setSearchValue }) => {
   return (
     <header>
       <div className="navbar">
-        <div className="main-navigation-container">
+        <div className="metflix-container">
           <Typography className="navbar-title" title="Metflix" />
         </div>
       </div>

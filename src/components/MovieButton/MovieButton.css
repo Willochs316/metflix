@@ -21,7 +21,20 @@
   }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 679px) {
+@media only screen and (min-width: 376px) and (max-width: 679px) {
+  .heart-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .close-icon {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 375px) {
   .heart-icon {
     width: 20px;
     height: 20px;
