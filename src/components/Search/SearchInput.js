@@ -1,4 +1,4 @@
-import Input from "../../most/sinput";
+import Input from "../../utilities/Input";
 import "./SearchInput.css";
 
 export const SearchBox = ({ searchValue, setSearchValue }) => {

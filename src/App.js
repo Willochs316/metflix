@@ -4,7 +4,7 @@ import {
   AddFavorite,
   RemoveFavorite,
 } from "./components/MovieButton/MovieButton";
-import Typography from "./most/Typography";
+import Typography from "./utilities/Typography";
 import MovieCard from "./components/Movies/MovieCard";
 import NavBar from "./components/NavBar/NavBar";
 import axios from "axios";
